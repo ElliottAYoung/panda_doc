@@ -4,6 +4,7 @@ module PandaDoc
   module Objects
     class Field < Base
       attribute :uuid, Types::Coercible::String
+      attribute :field_id, Types::Coercible::String
       attribute :name, Types::Coercible::String.optional
       attribute :title, Types::Coercible::String.optional
       attribute? :placeholder, Types::Coercible::String.optional
